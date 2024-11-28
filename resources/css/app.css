@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:focus {
+  @apply rounded-md outline-none border-blue-400 dark:border-blue-600 ring-2 ring-blue-200 dark:ring-blue-800 focus:ring-opacity-50;
+}
+.link {
+  @apply text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100;
+}
+textarea {
+  min-height: 58px;
+}
+@media print {
+  .modal-open .header,
+  .modal-open .page,
+  .modal-open .contents {
+    @apply hidden;
+  }
+  .modal {
+    @apply shadow-none max-w-full w-full mt-2 mb-0;
+  }
+}

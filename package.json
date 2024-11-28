@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "pwa-assets": "pwa-assets-generator",
+    "build": "rm -rf ./public/assets && vite build && vite build --ssr",
+    "build:server": "vite build && vite build --ssr && vite build && vite build --ssr --ssr"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/server-renderer": "^3.5.7",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
+    "laravel-vite-plugin": "^1.0.5",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.12",
+    "vite": "^5.4.7",
+    "vite-plugin-pwa": "^0.19.8",
+    "vue": "^3.5.7",
+    "vue-router": "^4.4.5",
+    "workbox-core": "^7.1.0",
+    "workbox-precaching": "^7.1.0",
+    "ziggy-js": "^2.3.0"
+  },
+  "dependencies": {
+    "@inertiajs/vue3": "^1.2.0",
+    "jsbarcode": "^3.11.6",
+    "uuid": "^9.0.1",
+    "vue-i18n": "^9.14.0"
+  }
+}
